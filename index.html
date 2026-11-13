@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rocket League - Guide Complet</title>
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- BOUTON RETOUR EN HAUT (FIXE EN HAUT À GAUCHE)             -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- Il faudrait que je place mon fichier icone.ico dans le dossier "icones"      -->
+    <a href="#haut" class="bouton-retour-haut" title="Retourner en haut de la page">
+        <img src="icones/icone.ico" alt="↑" class="image-icone">
+    </a>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- NAVIGATION PAR POINTS (FIXE SUR LE CÔTÉ GAUCHE)           -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- Ces points restent visibles à gauche pour aller vite sur chaque catégorie -->
+    <div class="navigation-points">
+        <a href="#histoire" class="point-nav" title="Catégorie : Histoire"></a>
+        <a href="#rangs" class="point-nav" title="Catégorie : Rangs"></a>
+        <a href="#voitures" class="point-nav" title="Catégorie : Voitures"></a>
+        <a href="#mecaniques" class="point-nav" title="Catégorie : Mécaniques"></a>
+        <a href="#esport" class="point-nav" title="Catégorie : Esport"></a>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- 1. EN-TÊTE DU SITE (Titre + Menu de Navigation)           -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <header id="haut">
+        <h1>ROCKET LEAGUE</h1>
+        <p>Le jeu où le football est mélangé avec les voitures !</p>
+
+        <!-- Menu de navigation avec des liens d'ancres vers chaque section -->
+        <nav>
+            <a href="#histoire">Histoire</a>
+            <a href="#rangs">Rangs</a>
+            <a href="#voitures">Voitures</a>
+            <a href="#mecaniques">Mécaniques</a>
+            <a href="#esport">Esport</a>
+        </nav>
+    </header>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- 2. SECTION HISTOIRE DU JEU                                -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <div id="histoire" class="section-boite">
+        <h2>Histoire de Rocket League</h2>
+
+        <p>
+            Sorti officiellement le <strong>7 juillet 2015</strong> par le studio américain <strong>Psyonix</strong>,
+            <em>Rocket League</em> est devenu un phénomène mondial du jeu vidéo. Mais avant ce succès retentissant,
+            le concept a vu le jour plusieurs années auparavant avec un premier titre précurseur.
+        </p>
+
+        <h3>L'ancêtre méconnu : SARPBC (2008)</h3>
+        <p>
+            Dès 2008 sur PlayStation 3, Psyonix lance <em>Supersonic Acrobatic Rocket-Powered Battle-Cars</em> (SARPBC).
+            Bien que son nom à rallonge l'ait empêché d'atteindre le très grand public, le jeu a posé les bases d'une
+            physique de balle et de voiture ultra-précise, créant une première communauté de passionnés fidèles.
+        </p>
+
+        <h3>Le lancement explosif et la naissance de l'esport (2015 - 2016)</h3>
+        <p>
+            Fort de cette expérience, Psyonix retravaille entièrement la maniabilité et sort <strong>Rocket
+                League</strong>
+            en juillet 2015. Offert dès le premier jour aux abonnés PlayStation Plus et plébiscité sur PC via Steam, le
+            jeu
+            connaît un engouement immédiat et massif. Face à l'intensité compétitive des matchs, Psyonix lance dès 2016
+            les
+            <strong>RLCS</strong> (Rocket League Championship Series), le circuit officiel esport professionnel.
+        </p>
+
+        <h3>Rachat par Epic Games et virage Free-to-Play (2019 - 2020)</h3>
+        <p>
+            En mai 2019, <strong>Epic Games</strong> annonce le rachat du studio Psyonix. Ce tournant majeur aboutit le
+            <strong>23 septembre 2020</strong> au passage du jeu en <em>Free-to-Play</em> (100 % gratuit pour tous). Le
+            titre
+            arrive sur l'Epic Games Store, adopte un système de saisons numérotées et introduit le Rocket Pass avec une
+            multitude
+            de personnalisations cosmétiques.
+        </p>
+
+        <h3>Repères chronologiques majeurs</h3>
+        <ul class="liste-chrono">
+            <li><strong>2008 :</strong> Sortie de SARPBC sur PS3, la genèse du gameplay à propulsion.</li>
+            <li><strong>7 juillet 2015 :</strong> Sortie officielle de Rocket League sur PC et PS4.</li>
+            <li><strong>2016 :</strong> Lancement officiel de la Saison 1 des RLCS.</li>
+            <li><strong>Mai 2019 :</strong> Rachat officiel du studio Psyonix par Epic Games.</li>
+            <li><strong>23 septembre 2020 :</strong> Passage en modèle Free-to-Play et arrivée sur l'Epic Games Store.
+            </li>
+            <li><strong>Aujourd'hui :</strong> Des millions de joueurs quotidiens, des crossovers majeurs (marques
+                automobiles, cinéma) et un esport de niveau mondial.</li>
+        </ul>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- 3. SECTION GRAPHIQUE DES RANGS                            -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <div id="rangs" class="section-boite">
+        <h2>Graphique de Répartition des Rangs</h2>
+        <p>
+            En mode compétitif, chaque victoire permet de grimper au classement. Voici la répartition approximative
+            des joueurs selon leur rang (totalisant environ 100 %) :
+        </p>
+
+        <!-- Graphique horizontal réalisé en HTML et CSS pur -->
+        <div class="graphique-rangs">
+
+            <!-- Rang Bronze -->
+            <div class="ligne-rang">
+                <div class="info-rang">
+                    <span class="nom-rang">Bronze</span>
+                    <span class="pourcentage-rang">5 % des joueurs</span>
+                </div>
+                <div class="fond-barre">
+                    <div class="barre barre-bronze" style="width: 5%;"></div>
+                </div>
+            </div>
+
+            <!-- Rang Argent -->
+            <div class="ligne-rang">
+                <div class="info-rang">
+                    <span class="nom-rang">Argent</span>
+                    <span class="pourcentage-rang">12 % des joueurs</span>
+                </div>
+                <div class="fond-barre">
+                    <div class="barre barre-argent" style="width: 12%;"></div>
+                </div>
+            </div>
+
+            <!-- Rang Or -->
+            <div class="ligne-rang">
+                <div class="info-rang">
+                    <span class="nom-rang">Or</span>
+                    <span class="pourcentage-rang">23 % des joueurs</span>
+                </div>
+                <div class="fond-barre">
+                    <div class="barre barre-or" style="width: 23%;"></div>
+                </div>
+            </div>
+
+            <!-- Rang Platine -->
+            <div class="ligne-rang">
+                <div class="info-rang">
+                    <span class="nom-rang">Platine</span>
+                    <span class="pourcentage-rang">25 % des joueurs</span>
+                </div>
+                <div class="fond-barre">
+                    <div class="barre barre-platine" style="width: 25%;"></div>
+                </div>
+            </div>
+
+            <!-- Rang Diamant -->
+            <div class="ligne-rang">
+                <div class="info-rang">
+                    <span class="nom-rang">Diamant</span>
+                    <span class="pourcentage-rang">20 % des joueurs</span>
+                </div>
+                <div class="fond-barre">
+                    <div class="barre barre-diamant" style="width: 20%;"></div>
+                </div>
+            </div>
+
+            <!-- Rang Champion -->
+            <div class="ligne-rang">
+                <div class="info-rang">
+                    <span class="nom-rang">Champion</span>
+                    <span class="pourcentage-rang">11 % des joueurs</span>
+                </div>
+                <div class="fond-barre">
+                    <div class="barre barre-champion" style="width: 11%;"></div>
+                </div>
+            </div>
+
+            <!-- Rang Grand Champion -->
+            <div class="ligne-rang">
+                <div class="info-rang">
+                    <span class="nom-rang">Grand Champion</span>
+                    <span class="pourcentage-rang">3.8 % des joueurs</span>
+                </div>
+                <div class="fond-barre">
+                    <div class="barre barre-grand-champion" style="width: 3.8%;"></div>
+                </div>
+            </div>
+
+            <!-- Rang Supersonic Legend -->
+            <div class="ligne-rang">
+                <div class="info-rang">
+                    <span class="nom-rang">Supersonic Legend (SSL)</span>
+                    <span class="pourcentage-rang">0.2 % des joueurs</span>
+                </div>
+                <div class="fond-barre">
+                    <div class="barre barre-ssl" style="width: 1%;"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="note-info">
+            <em>* Note : Ces pourcentages sont des valeurs moyennes approximatives (basées sur les modes compétitifs 2v2
+                et 3v3).
+                La distribution réelle varie légèrement à chaque nouvelle saison selon le réétalonnage du MMR
+                (Matchmaking Rating).</em>
+        </p>
+
+        <!-- Tableau récapitulatif des niveaux de jeu -->
+        <h3>Description des Paliers de Compétence</h3>
+        <table>
+            <tr>
+                <th>Rang</th>
+                <th>Niveau des joueurs</th>
+            </tr>
+            <tr>
+                <td>Bronze / Argent / Or</td>
+                <td>Débutants : apprentissage des bases, trajectoire du ballon et frappes au sol.</td>
+            </tr>
+            <tr>
+                <td>Platine / Diamant</td>
+                <td>Intermédiaires : début du jeu aérien (prises d'altitude rapides), rotations et passes.</td>
+            </tr>
+            <tr>
+                <td>Champion / Grand Champion</td>
+                <td>Avancés : jeu rapide à deux ou trois, précision chirurgicale et contrôle parfait du véhicule.</td>
+            </tr>
+            <tr>
+                <td>Supersonic Legend (SSL)</td>
+                <td>L'élite absolue du jeu vidéo (professionnels et meilleurs compétiteurs du monde).</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- 4. SECTION VOITURES (Cartes Cliquables)                   -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <div id="voitures" class="section-boite">
+        <h2>Les 3 Voitures Préférées des Joueurs</h2>
+        <p>Clique sur la carte d'une voiture pour lire son chapitre complet et découvrir ses caractéristiques :</p>
+
+        <!-- Conteneur avec les 3 cartes alignées côte à côte -->
+        <div class="aligner-boites">
+
+            <!-- Carte Voiture 1 : Octane (Lien vers #octane) -->
+            <a href="#octane" class="carte-voiture">
+                <h3>Octane</h3>
+                <p>La voiture emblématique du jeu, reconnue pour son équilibre parfait et sa polyvalence.</p>
+                <p class="texte-clic">👉 En savoir plus sur l'Octane</p>
+            </a>
+
+            <!-- Carte Voiture 2 : Fennec (Lien vers #fennec) -->
+            <a href="#fennec" class="carte-voiture">
+                <h3>Fennec</h3>
+                <p>Une carrosserie cubique très populaire chez les pros, offrant des frappes très précises.</p>
+                <p class="texte-clic">👉 En savoir plus sur la Fennec</p>
+            </a>
+
+            <!-- Carte Voiture 3 : Dominus (Lien vers #dominus) -->
+            <a href="#dominus" class="carte-voiture">
+                <h3>Dominus</h3>
+                <p>Une voiture plate et allongée, redoutable pour expédier des tirs d'une puissance maximale.</p>
+                <p class="texte-clic">👉 En savoir plus sur la Dominus</p>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- 5. CHAPITRES DÉTAILLÉS DES VOITURES                       -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+
+    <!-- Chapitre 1 : Octane -->
+    <div id="octane" class="section-boite">
+        <h2>Octane - La Référence Universelle</h2>
+        <p>
+            L'Octane est le véhicule emblématique de Rocket League depuis le tout premier jour. Débloquée dès le début,
+            elle reste l'une des voitures les plus jouées au monde, des débutants jusqu'aux champions du monde des RLCS.
+        </p>
+
+        <h3>Avantages</h3>
+        <ul>
+            <li>Excellente hauteur de carrosserie facilitant les duels face à face (50-50).</li>
+            <li>Très bon contrôle du ballon lors des dribbles au sol.</li>
+            <li>Polyvalente dans tous les domaines : défense, passes, tirs et jeu aérien.</li>
+        </ul>
+
+        <h3>Inconvénients</h3>
+        <ul>
+            <li>Moins allongée que la Dominus, ce qui demande un timing plus précis pour certains tirs en puissance.
+            </li>
+            <li>Forme visuelle arrondie qui épouse un peu moins bien les coins invisibles de la boîte de collision.</li>
+        </ul>
+
+        <h3>Explication de sa Hitbox</h3>
+        <p>
+            <strong>Type de hitbox :</strong> Hitbox Octane standard.<br>
+            <strong>Dimensions officielles approximatives :</strong> Longueur : 144,9 cm | Largeur : 84,2 cm | Hauteur :
+            56,2 cm.
+        </p>
+        <p>
+            <strong>Ce que ça change en jeu :</strong> Sa hauteur élevée permet d'avoir une surface de contact généreuse
+            lors
+            des réceptions et des contres au sol. Elle pardonne davantage les petites erreurs d'angle lors des duels et
+            offre une grande
+            stabilité quand on porte le ballon sur le toit.
+        </p>
+
+        <a href="#voitures" class="lien-retour">↑ Retour aux voitures</a>
+    </div>
+
+    <!-- Chapitre 2 : Fennec -->
+    <div id="fennec" class="section-boite">
+        <h2>Fennec - La Précision Moderne</h2>
+        <p>
+            Introduite en 2019 dans la caisse Totally Awesome, la Fennec a bouleversé la scène compétitive. Avec son
+            look
+            rappelant une citadine sportive compacte, elle a immédiatement conquis les plus grands joueurs
+            internationaux.
+        </p>
+
+        <h3>Avantages</h3>
+        <ul>
+            <li>La forme visuelle de la voiture correspond quasiment trait pour trait à la hitbox invisible.</li>
+            <li>Excellente lisibilité pour frapper la balle avec les coins avant (puissance maximale).</li>
+            <li>Mêmes forces que l'Octane lors des 50-50 et du jeu au sol.</li>
+        </ul>
+
+        <h3>Inconvénients</h3>
+        <ul>
+            <li>Pas disponible gratuitement dès le début : s'obtient via les plans, la boutique ou les échanges.</li>
+            <li>Sensation visuelle de véhicule plus massif et lourd, ce qui demande un court temps d'adaptation.</li>
+        </ul>
+
+        <h3>Explication de sa Hitbox</h3>
+        <p>
+            <strong>Type de hitbox :</strong> Hitbox Octane (la Fennec partage exactement la même hitbox que l'Octane
+            !).<br>
+            <strong>Dimensions officielles approximatives :</strong> Longueur : 144,9 cm | Largeur : 84,2 cm | Hauteur :
+            56,2 cm.
+        </p>
+        <p>
+            <strong>Ce que ça change en jeu :</strong> Bien que ses statistiques physiques soient identiques à celles de
+            l'Octane,
+            sa carrosserie cubique "remplit" beaucoup mieux l'espace de collision. Les joueurs voient exactement où se
+            trouvent
+            les arêtes de la voiture, ce qui rend le placement de frappe beaucoup plus naturel et rigoureux.
+        </p>
+
+        <a href="#voitures" class="lien-retour">↑ Retour aux voitures</a>
+    </div>
+
+    <!-- Chapitre 3 : Dominus -->
+    <div id="dominus" class="section-boite">
+        <h2>Dominus - La Reine de la Puissance</h2>
+        <p>
+            Inspirée des muscle cars américaines classiques, la Dominus est le modèle préféré des amateurs de frappes
+            lourdes
+            et de déviations spectaculaires. Son long capot plat en fait une arme offensive redoutable.
+        </p>
+
+        <h3>Avantages</h3>
+        <ul>
+            <li>Capot plat très étendu permettant des tirs de volée puissants et des "flicks" dévastateurs.</li>
+            <li>Grande surface utile pour les redirections et les réceptions en vol (aériennes).</li>
+            <li>Style agressif très apprécié en mode 1v1 ou pour les joueurs offensifs.</li>
+        </ul>
+
+        <h3>Inconvénients</h3>
+        <ul>
+            <li>Carrosserie basse : elle est désavantagée lors des duels frontaux au sol (50-50).</li>
+            <li>Dribbler avec la balle sur le toit exige une grande précision pour éviter de la perdre.</li>
+        </ul>
+
+        <h3>Explication de sa Hitbox</h3>
+        <p>
+            <strong>Type de hitbox :</strong> Hitbox Dominus.<br>
+            <strong>Dimensions officielles approximatives :</strong> Longueur : 157,9 cm | Largeur : 83,3 cm | Hauteur :
+            46,4 cm.
+        </p>
+        <p>
+            <strong>Ce que ça change en jeu :</strong> La Dominus est plus longue d'environ 13 cm par rapport à
+            l'Octane,
+            mais presque 10 cm plus basse ! Cette géométrie en forme de planche permet de frapper sous le ballon avec un
+            effet de levier énorme, générant des trajectoires de balle ultra-rapides et tendues vers les cages adverses.
+        </p>
+
+        <a href="#voitures" class="lien-retour">↑ Retour aux voitures</a>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- 6. SECTION MÉCANIQUES CLÉS DU JEU                         -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <div id="mecaniques" class="section-boite">
+        <h2>Mécaniques Clés du Jeu</h2>
+        <p>
+            Rocket League est un jeu basé à 100 % sur la physique sans assistance automatique. Voici trois gestes
+            techniques emblématiques qui font la différence en match de haut niveau :
+        </p>
+
+        <!-- Mécanique 1 : Breezi Flick -->
+        <div class="boite-mecanique">
+            <h3>1. Le Breezi Flick</h3>
+            <p><strong>Niveau de difficulté :</strong> Expert</p>
+            <p>
+                <strong>Comment ça marche :</strong> Le joueur contrôle d'abord le ballon en dribble sur le toit de son
+                véhicule.
+                Il saute, incline sa voiture vers le bas, effectue une vrille aérienne (air roll combiné à un tornado
+                spin) pour
+                orienter l'arrière de son véhicule vers le haut, avant d'effectuer un backflip précis qui fouette le
+                ballon.
+            </p>
+            <p>
+                <strong>À quoi ça sert :</strong> C'est l'une des feintes au sol les plus déstabilisantes du jeu. Comme
+                la voiture
+                semble tourner le dos au gardien, celui-ci anticipe mal la trajectoire, et le ballon est propulsé à plus
+                de 100 km/h
+                dans la lucarne.
+            </p>
+
+            <!-- ICI :Il me faut le clip MP4 du Breezi Flick. Il faut que je le place dans le dossier "videos" avec le nom "clip_breezi.mp4" -->
+            <div class="boite-video">
+                <p><em>Vidéo : Breezi Flick</em></p>
+                <video controls width="100%">
+                    <source src="videos/clip_breezi.mp4" type="video/mp4">
+                    Ton navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+        </div>
+
+        <!-- Mécanique 2 : Flip Reset -->
+        <div class="boite-mecanique">
+            <h3>2. Le Flip Reset</h3>
+            <p><strong>Niveau de difficulté :</strong> Très difficile</p>
+            <p>
+                <strong>Comment ça marche :</strong> Dans les airs, le joueur retourne sa voiture pour poser
+                simultanément ses quatre roues
+                sous le ballon. Le moteur physique du jeu interprète ce contact comme un atterrissage sur une surface
+                solide, ce qui redonne
+                immédiatement au joueur son deuxième saut (le flip), utilisable sans limite de temps.
+            </p>
+            <p>
+                <strong>À quoi ça sert :</strong> En temps normal, un saut aérien expire au bout de 1,5 seconde. Avec un
+                flip reset,
+                le joueur peut déclencher une accélération soudaine ou une frappe imprévisible au dernier instant pour
+                tromper le gardien.
+            </p>
+
+            <!-- ICI :Maintenant il me faut le clip MP4 du Flip Reset. Il faut aussi que je le place dans le dossier "videos" avec le nom "clip_reset.mp4" -->
+            <div class="boite-video">
+                <p><em>Vidéo : Flip Reset</em></p>
+                <video controls width="100%">
+                    <source src="videos/clip_reset.mp4" type="video/mp4">
+                    Ton navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+        </div>
+
+        <!-- Mécanique 3 : Ceiling Shot -->
+        <div class="boite-mecanique">
+            <h3>3. Le Ceiling Shot (Tir depuis le plafond)</h3>
+            <p><strong>Niveau de difficulté :</strong> Intermédiaire / Difficile</p>
+            <p>
+                <strong>Comment ça marche :</strong> Le joueur propulse le ballon en hauteur depuis le mur latéral, puis
+                roule jusqu'au
+                plafond de l'arène. Au lieu de sauter du plafond, il s'en laisse tomber par gravité. Comme il n'a pas
+                appuyé sur le bouton
+                de saut pour quitter la surface, son flip reste disponible indéfiniment pendant toute sa chute.
+            </p>
+            <p>
+                <strong>À quoi ça sert :</strong> Cette technique permet d'économiser du turbo (boost), d'attaquer
+                depuis un angle vertical
+                très difficile à bloquer, et de conserver son tir jusqu'au dernier mètre avant les buts.
+            </p>
+
+            <!-- ICI :Pour finir il me faut le clip MP4 du Ceiling Shot et il faut que je le place dans le dossier "videos" avec le nom "clip_ceiling.mp4" -->
+            <div class="boite-video">
+                <p><em>Vidéo : Ceiling shot</em></p>
+                <video controls width="100%">
+                    <source src="videos/clip_ceiling.mp4" type="video/mp4">
+                    Ton navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- 7. SECTION ESPORT & GENTLE MATES                          -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <div id="esport" class="section-boite">
+        <h2>La Scène Esport & L'Équipe Gentle Mates</h2>
+        <p>
+            La scène compétitive de Rocket League est organisée autour des <strong>RLCS</strong> (Rocket League
+            Championship Series).
+            Chaque année, les meilleures équipes des différentes régions du globe (Europe, Amérique du Nord,
+            Moyen-Orient,
+            Amérique du Sud, Océanie) s'affrontent lors de tournois majeurs internationaux (les Majors) pour tenter de
+            décrocher
+            le titre suprême lors des Championnats du Monde. L'Europe s'impose historiquement comme la région reine en
+            termes de trophées.
+        </p>
+        <p>
+            Fondée par les créateurs de contenu français Squeezie, Gotaga et Brawks, l'organisation <strong>Gentle Mates
+                (M8)</strong>
+            a marqué l'histoire en remportant le Major de Copenhague en 2024. Pour la saison suivante, Gentle Mates a
+            assemblé un
+            véritable effectif de rêve ("super-team") réunissant trois des joueurs les plus titrés et redoutés de la
+            planète :
+        </p>
+
+        <!-- Cartes des 3 joueurs Gentle Mates -->
+        <div class="aligner-boites">
+
+            <!-- Joueur 1 : Zen -->
+            <div class="carte-joueur">
+                <h3>zen</h3>
+                <p><strong>Identité :</strong> Alexis Bernier</p>
+                <p><strong>Âge :</strong> 19 ans (né le 20 février 2007)</p>
+                <p><strong>Nationalité :</strong> Française 🇫🇷</p>
+                <p><strong>Rôle :</strong> Playmaker & virtuose mécanique polyvalent</p>
+                <p><strong>Équipe :</strong> Gentle Mates</p>
+                <p>
+                    <strong>Palmarès majeur :</strong> Champion du Monde RLCS 2023, élu MVP des Worlds 2023,
+                    vainqueur du Spring Major 2023 et auteur d'un grand chelem printanier historique avec Vitality.
+                </p>
+                <p>
+                    <strong>Points forts :</strong> Génie créatif, lecture de jeu instantanée, récupération au sol
+                    ultrarapide
+                    et frappes aériennes impossibles à arrêter.
+                </p>
+                <p><strong>Stats en match (moyenne RLCS) :</strong> ~0,85 but / match | ~0,65 passe / match | ~1,85
+                    arrêt / match</p>
+            </div>
+
+            <!-- Joueur 2 : Vatira -->
+            <div class="carte-joueur">
+                <h3>Vatira</h3>
+                <p><strong>Identité :</strong> Axel Touret</p>
+                <p><strong>Âge :</strong> 20 ans (né le 14 mai 2006)</p>
+                <p><strong>Nationalité :</strong> Française 🇫🇷</p>
+                <p><strong>Rôle :</strong> Troisième homme (défenseur impérial & relanceur)</p>
+                <p><strong>Équipe :</strong> Gentle Mates</p>
+                <p>
+                    <strong>Palmarès majeur :</strong> Vainqueur du Major de Londres 2022 (Moist), vainqueur du Major de
+                    San Diego 2023 (Karmine Corp), multiple champion régional européen et plusieurs fois élu Défenseur
+                    de la Saison RLCS.
+                </p>
+                <p>
+                    <strong>Points forts :</strong> Sang-froid légendaire dans les moments décisifs (clutch), gardien
+                    infranchissable,
+                    vision panoramique et relances chirurgicales.
+                </p>
+                <p><strong>Stats en match (moyenne RLCS) :</strong> ~0,76 but / match | ~0,55 passe / match | ~1,95
+                    arrêt / match</p>
+            </div>
+
+            <!-- Joueur 3 : Atow -->
+            <div class="carte-joueur">
+                <h3>Atow</h3>
+                <p><strong>Identité :</strong> Tristan Soyez</p>
+                <p><strong>Âge :</strong> 19 ans (né le 22 février 2007)</p>
+                <p><strong>Nationalité :</strong> Belge 🇧🇪</p>
+                <p><strong>Rôle :</strong> Premier attaquant & créateur de chaos</p>
+                <p><strong>Équipe :</strong> Gentle Mates</p>
+                <p>
+                    <strong>Palmarès majeur :</strong> Vainqueur de multiples championnats régionaux RLCS (Karmine
+                    Corp),
+                    demi-finaliste des Championnats du Monde et vainqueur de tournois internationaux majeurs.
+                </p>
+                <p>
+                    <strong>Points forts :</strong> Vitesse de déplacement fulgurante, pression constante sur les
+                    défenseurs,
+                    art de la démolition tactique et percussion offensive.
+                </p>
+                <p><strong>Stats en match (moyenne RLCS) :</strong> ~0,81 but / match | ~0,58 passe / match | ~1,55
+                    arrêt / match</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- 8. BAS DE PAGE (Footer)                                   -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <footer>
+        <p>Site réalisé en HTML et CSS - BTS CIEL</p>
+    </footer>
+
+</body>
+
+</html>

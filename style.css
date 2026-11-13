@@ -1,0 +1,453 @@
+/* ══════════════════════════════════════════════════════════════════ */
+/* STYLE GÉNÉRAL DU SITE                                            */
+/* ══════════════════════════════════════════════════════════════════ */
+
+/* Défilement fluide lorsqu'on clique sur un lien d'ancre du menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style de tout le corps de la page */
+body {
+    background-color: #0d1322;
+    /* Fond bleu nuit très sombre */
+    color: white;
+    /* Texte en blanc pour une bonne lisibilité */
+    font-family: Arial, sans-serif;
+    /* Police standard, propre et lisible */
+    margin: 0;
+    /* Enlève la marge par défaut sur les bords du navigateur */
+    padding: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════════ */
+/* BOUTON RETOUR EN HAUT (FIXE EN HAUT À GAUCHE)                     */
+/* ══════════════════════════════════════════════════════════════════ */
+
+/* Bouton fixé en haut à gauche de l'écran */
+.bouton-retour-haut {
+    position: fixed;               /* Reste visible en permanence lors du défilement */
+    top: 15px;                     /* À 15 pixels du haut */
+    left: 15px;                    /* À 15 pixels de la gauche */
+    z-index: 1000;                 /* Reste au-dessus de tous les éléments du site */
+    width: 44px;
+    height: 44px;
+    background-color: #162038;     /* Fond bleu foncé assorti au site */
+    border: 2px solid #0088ff;     /* Bordure bleue */
+    border-radius: 50%;            /* Forme ronde */
+    display: flex;                 /* Centre l'icône à l'intérieur */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;                  /* Couleur de secours pour le texte alternatif */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Effet de survol sur le bouton retour en haut (:hover) */
+.bouton-retour-haut:hover {
+    border-color: #ff6600;         /* La bordure devient orange au survol */
+}
+
+/* L'image icone.ico à l'intérieur du bouton */
+.image-icone {
+    width: 26px;                   /* Taille de l'icône */
+    height: 26px;
+    display: block;
+}
+
+/* ══════════════════════════════════════════════════════════════════ */
+/* NAVIGATION PAR POINTS SUR LE CÔTÉ GAUCHE                         */
+/* ══════════════════════════════════════════════════════════════════ */
+
+/* Boîte verticale fixée à gauche contenant les points */
+.navigation-points {
+    position: fixed;               /* Reste toujours visible sur le côté gauche */
+    top: 75px;                     /* Positionnée sous le bouton retour en haut */
+    left: 20px;                    /* Alignée sur le côté gauche */
+    z-index: 999;                  /* Au-dessus des boîtes de contenu */
+    background-color: #162038;     /* Fond bleu foncé pour bien faire ressortir les points */
+    border: 2px solid #0088ff;     /* Bordure bleue assortie */
+    border-radius: 20px;           /* Bords arrondis pour former une petite barre élégante */
+    padding: 12px 8px;             /* Espace intérieur */
+    display: flex;
+    flex-direction: column;        /* Aligne les points à la verticale */
+    gap: 12px;                     /* Espace entre chaque point */
+    align-items: center;
+}
+
+/* Style de chaque point individuel */
+.point-nav {
+    display: block;
+    width: 14px;                   /* Largeur du point */
+    height: 14px;                  /* Hauteur du point */
+    background-color: #0088ff;     /* Couleur bleue par défaut */
+    border-radius: 50%;            /* Donne la forme d'un point rond */
+    text-decoration: none;
+}
+
+/* Effet au survol sur un point (:hover) */
+.point-nav:hover {
+    background-color: #ff6600;     /* Le point devient orange quand on passe la souris dessus */
+}
+
+/* ══════════════════════════════════════════════════════════════════ */
+/* EN-TÊTE ET MENU DE NAVIGATION                                    */
+/* ══════════════════════════════════════════════════════════════════ */
+
+/* Bandeau principal en haut du site */
+header {
+    background-color: #162038;
+    /* Fond bleu foncé */
+    text-align: center;
+    /* Centre le titre et le menu au milieu */
+    padding: 30px 20px;
+    /* Espace intérieur */
+    border-bottom: 4px solid #ff6600;
+    /* Ligne orange Rocket League sous l'en-tête */
+}
+
+/* Gros titre H1 */
+h1 {
+    color: #0088ff;
+    /* Bleu officiel Rocket League */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Titres de niveau 2 (titres de sections) */
+h2 {
+    color: #ff6600;
+    /* Orange officiel Rocket League */
+    border-bottom: 1px solid #ff6600;
+    /* Petite ligne orange sous chaque titre */
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* Titres de niveau 3 (sous-parties) */
+h3 {
+    color: #0088ff;
+    /* Bleu Rocket League */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Liens du menu de navigation */
+nav a {
+    color: white;
+    /* Texte des boutons en blanc */
+    text-decoration: none;
+    /* Enlève le soulignement des liens */
+    background-color: #0088ff;
+    /* Fond bleu pour créer l'aspect d'un bouton */
+    padding: 10px 18px;
+    /* Taille intérieure du bouton */
+    margin: 5px;
+    /* Espace entre les boutons */
+    border-radius: 5px;
+    /* Bords légèrement arrondis */
+    font-weight: bold;
+    /* Texte en gras */
+    display: inline-block;
+    /* Permet d'appliquer le padding et les marges */
+}
+
+/* Effet de survol sur les boutons du menu (:hover) */
+nav a:hover {
+    background-color: #ff6600;
+    /* Le bouton devient orange quand la souris passe dessus */
+}
+
+/* ══════════════════════════════════════════════════════════════════ */
+/* STRUCTURE DES SECTIONS                                           */
+/* ══════════════════════════════════════════════════════════════════ */
+
+/* Boîte principale de chaque section du site */
+.section-boite {
+    background-color: #162038;
+    /* Fond bleu foncé contrasté */
+    width: 80%;
+    /* Occupe 80% de la largeur de l'écran */
+    margin: 30px auto;
+    /* "auto" permet de centrer parfaitement le bloc */
+    padding: 25px;
+    /* Espace entre le contenu et les bords */
+    border-radius: 8px;
+    /* Coins arrondis élégants */
+    scroll-margin-top: 25px;
+    /* Espace au-dessus lors du saut d'ancre pour ne pas coller l'écran */
+}
+
+/* Listes à puces */
+ul {
+    line-height: 1.6;
+    /* Espace aéré entre chaque ligne de texte */
+}
+
+/* Texte explicatif pour inciter au clic */
+.texte-clic {
+    color: #0088ff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Liens de retour vers le haut de la section */
+.lien-retour {
+    display: inline-block;
+    margin-top: 20px;
+    color: #0088ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Effet au survol du lien de retour */
+.lien-retour:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* ══════════════════════════════════════════════════════════════════ */
+/* SECTION GRAPHIQUE DES RANGS (BARRES HORIZONTALES)                */
+/* ══════════════════════════════════════════════════════════ */
+
+/* Conteneur global du graphique des rangs */
+.graphique-rangs {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/* Ligne individuelle pour chaque rang */
+.ligne-rang {
+    margin-bottom: 12px;
+}
+
+/* Nom du rang et pourcentage au-dessus de la barre */
+.info-rang {
+    display: flex;
+    /* Aligne le nom à gauche et le pourcentage à droite */
+    justify-content: space-between;
+    /* Écarte les deux informations aux deux extrémités */
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Fond de la barre (glissière grise sombre) */
+.fond-barre {
+    background-color: #0d1322;
+    /* Fond sombre intérieur */
+    border: 1px solid #0088ff;
+    /* Contour fin bleu */
+    border-radius: 4px;
+    height: 20px;
+    /* Hauteur de la barre */
+    overflow: hidden;
+    /* Empêche la barre de dépasser des bords arrondis */
+}
+
+/* Barre de remplissage colorée */
+.barre {
+    height: 100%;
+    /* Remplit toute la hauteur du conteneur */
+    border-radius: 3px;
+    min-width: 4px;
+    /* Garantit qu'un tout petit pourcentage reste visible */
+}
+
+/* Couleurs spécifiques à chaque rang de Rocket League */
+.barre-bronze {
+    background-color: #cd7f32;
+    /* Marron bronze */
+}
+
+.barre-argent {
+    background-color: #a8b0b8;
+    /* Gris argenté */
+}
+
+.barre-or {
+    background-color: #ffd700;
+    /* Jaune doré */
+}
+
+.barre-platine {
+    background-color: #00b4d8;
+    /* Bleu ciel platine */
+}
+
+.barre-diamant {
+    background-color: #0088ff;
+    /* Bleu éclatant diamant */
+}
+
+.barre-champion {
+    background-color: #9d4edd;
+    /* Violet champion */
+}
+
+.barre-grand-champion {
+    background-color: #e63946;
+    /* Rouge vif grand champion */
+}
+
+.barre-ssl {
+    background-color: #ffffff;
+    /* Blanc éclatant Supersonic Legend */
+}
+
+/* Petite note informative sous le graphique */
+.note-info {
+    font-size: 13px;
+    color: #b0c4de;
+    margin-top: 15px;
+}
+
+/* ══════════════════════════════════════════════════════════════════ */
+/* TABLEAU DES RANGS                                                */
+/* ══════════════════════════════════════════════════════════════════ */
+
+/* Style général du tableau */
+table {
+    width: 100%;
+    /* Le tableau prend toute la largeur disponible */
+    border-collapse: collapse;
+    /* Fusionne les bordures des cellules entre elles */
+    margin-top: 15px;
+}
+
+/* Cellules d'en-tête et de données */
+th,
+td {
+    border: 1px solid #0088ff;
+    /* Bordures bleues autour des cases */
+    padding: 12px;
+    /* Espace intérieur dans chaque case */
+    text-align: left;
+    /* Alignement du texte à gauche */
+}
+
+/* Ligne d'en-tête du tableau */
+th {
+    background-color: #0088ff;
+    /* Fond bleu pour la première ligne */
+    color: white;
+    /* Texte blanc */
+}
+
+/* ══════════════════════════════════════════════════════════════════ */
+/* CARTES DES VOITURES ET DES JOUEURS                               */
+/* ══════════════════════════════════════════════════════════════════ */
+
+/* Conteneur flex pour aligner 3 éléments côte à côte */
+.aligner-boites {
+    display: flex;
+    /* Place les éléments horizontalement */
+    gap: 20px;
+    /* Espacement régulier entre les cartes */
+    margin-top: 20px;
+}
+
+/* Carte de voiture (entièrement cliquable) */
+.carte-voiture {
+    background-color: #0d1322;
+    /* Fond bleu très sombre */
+    padding: 20px;
+    /* Espace intérieur */
+    border-radius: 6px;
+    /* Bords arrondis */
+    border: 2px solid #0088ff;
+    /* Bordure bleue nette */
+    width: 33%;
+    /* Chaque carte occupe un tiers de la ligne */
+    box-sizing: border-box;
+    /* Évite que les bordures et paddings n'élargissent la boîte */
+    text-decoration: none;
+    /* Enlève le soulignement automatique des balises <a> */
+    color: white;
+    /* Conserve la couleur blanche du texte */
+    display: block;
+    /* Permet au lien de se comporter comme une boîte complète */
+}
+
+/* Effet au survol de la souris sur une carte de voiture (:hover) */
+.carte-voiture:hover {
+    border-color: #ff6600;
+    /* La bordure passe en orange au passage de la souris */
+}
+
+/* Carte de joueur pour la section Esport */
+.carte-joueur {
+    background-color: #0d1322;
+    /* Fond bleu nuit */
+    padding: 20px;
+    border-radius: 6px;
+    border: 2px solid #0088ff;
+    /* Bordure bleue */
+    width: 33%;
+    /* Un tiers de la largeur */
+    box-sizing: border-box;
+}
+
+/* Effet au survol sur la carte d'un joueur (:hover) */
+.carte-joueur:hover {
+    border-color: #ff6600;
+    /* Bordure passe en orange au survol */
+}
+
+/* ══════════════════════════════════════════════════════════════════ */
+/* SECTION MÉCANIQUES & CADRES VIDÉOS                               */
+/* ══════════════════════════════════════════════════════════════════ */
+
+/* Bloc d'une mécanique individuelle */
+.boite-mecanique {
+    background-color: #10182b;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border-left: 4px solid #0088ff;
+    /* Trait vertical bleu indicateur à gauche */
+}
+
+/* Cadre avec bordure pointillée pour l'emplacement des vidéos MP4 */
+.boite-video {
+    border: 2px dashed #0088ff;
+    /* Bordure pointillée bleue bien visible */
+    background-color: #0d1322;
+    /* Fond sombre sous le lecteur vidéo */
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Texte d'indication au-dessus de la vidéo */
+.boite-video p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ff6600;
+    font-size: 13px;
+}
+
+/* Balise vidéo HTML5 */
+video {
+    display: block;
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+/* ══════════════════════════════════════════════════════════════════ */
+/* PIED DE PAGE (FOOTER)                                            */
+/* ══════════════════════════════════════════════════════════════════ */
+
+footer {
+    text-align: center;
+    /* Centre le texte au milieu */
+    padding: 20px;
+    /* Hauteur intérieure */
+    background-color: #070a12;
+    /* Fond très sombre pour clore la page */
+    margin-top: 40px;
+    /* Espace avec la dernière section */
+}
